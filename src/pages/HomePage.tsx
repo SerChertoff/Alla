@@ -102,7 +102,9 @@ export function HomePage({ onOpenConsult }: HomePageProps) {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-2xl font-semibold text-neutral-900">Почему обо мне</h2>
+        <h2 className="text-2xl font-semibold text-neutral-900">
+          Почему клиенты обращаются именно ко мне?
+        </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
