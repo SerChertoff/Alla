@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* react-datepicker базовые стили (минимум) */
+.react-datepicker-wrapper {
+  width: 100%;
+}
