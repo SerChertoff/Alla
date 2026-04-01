@@ -6,7 +6,7 @@ export const siteUrl = trimSlash(
 );
 
 export const contactEmail =
-  import.meta.env.VITE_CONTACT_EMAIL?.trim() || "office@alla-ivanova.ru";
+  import.meta.env.VITE_CONTACT_EMAIL?.trim() || "office@alla-gordienko.ru";
 
 export const site = {
   lawyerName: "Гордиенко Алла Владимировна",
