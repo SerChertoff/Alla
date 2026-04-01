@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { PageMeta } from "@/components/PageMeta";
+import { site } from "@/config/site";
 
 const services = [
   {
@@ -34,7 +35,7 @@ export function ServicesPage() {
   return (
     <>
       <PageMeta
-        title="Услуги и цены — Алла Иванова"
+        title={`Услуги и цены — ${site.lawyerName}`}
         description="Развод, раздел имущества, алименты в Барнауле. Ориентиры по стоимости и примерный калькулятор."
         path="/services"
       />

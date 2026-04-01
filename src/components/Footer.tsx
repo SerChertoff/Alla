@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { site } from "@/config/site";
 
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-sand-200 bg-white">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
         <div>
-          <p className="text-sm font-semibold text-neutral-900">Алла Иванова</p>
+          <p className="text-sm font-semibold text-neutral-900">{site.lawyerName}</p>
           <p className="mt-2 text-sm text-neutral-600">
             Семейный юрист. Помогаю пройти развод и сопутствующие вопросы спокойно и по правилам
             процесса.
@@ -45,7 +46,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-sand-200 py-4 text-center text-xs text-neutral-500">
-        © {new Date().getFullYear()} Алла Иванова. Барнаул.
+        © {new Date().getFullYear()} {site.lawyerName}. Барнаул.
       </div>
     </footer>
   );

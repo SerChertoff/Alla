@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { PageMeta } from "@/components/PageMeta";
 import { JsonLd } from "@/components/JsonLd";
+import { site } from "@/config/site";
 import profilePhoto from "../../assets/profile.png";
 
 type HomePageProps = {
@@ -38,7 +39,7 @@ export function HomePage({ onOpenConsult }: HomePageProps) {
   return (
     <>
       <PageMeta
-        title="Алла Иванова — семейный юрист в Барнауле"
+        title={`${site.lawyerName} — семейный юрист в Барнауле`}
         description="Быстрое и этичное решение бракоразводных процессов в Барнауле. Конфиденциально, с опорой на опыт и понятные шаги."
         path="/"
       />
@@ -88,7 +89,7 @@ export function HomePage({ onOpenConsult }: HomePageProps) {
             <div className="overflow-hidden rounded-2xl border border-white/20 bg-white/10 shadow-2xl ring-1 ring-white/10">
               <img
                 src={profilePhoto}
-                alt="Алла Иванова — семейный юрист, Барнаул"
+                alt={`${site.lawyerName} — семейный юрист, Барнаул`}
                 className="aspect-[4/5] h-auto w-full object-cover object-[center_20%]"
                 width={640}
                 height={800}

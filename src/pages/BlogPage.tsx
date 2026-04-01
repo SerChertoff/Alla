@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { PageMeta } from "@/components/PageMeta";
+import { site } from "@/config/site";
 import { formatRuLongDate } from "@/lib/formatDate";
 import { blogPosts } from "@/data/blogPosts";
 
@@ -7,7 +8,7 @@ export function BlogPage() {
   return (
     <>
       <PageMeta
-        title="Блог — Алла Иванова"
+        title={`Блог — ${site.lawyerName}`}
         description="Статьи о разводе, имуществе и алиментах. Материалы носят ознакомительный характер."
         path="/blog"
       />

@@ -38,7 +38,7 @@ export function ContactPage() {
   return (
     <>
       <PageMeta
-        title="Контакты — Алла Иванова"
+        title={`Контакты — ${site.lawyerName}`}
         description="Телефон, email и офис в Барнауле. Форма обратной связи."
         path="/contact"
       />

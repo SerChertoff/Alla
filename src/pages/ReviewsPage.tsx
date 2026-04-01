@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { PageMeta } from "@/components/PageMeta";
+import { site } from "@/config/site";
 
 const cases = [
   {
@@ -25,7 +26,7 @@ export function ReviewsPage() {
   return (
     <>
       <PageMeta
-        title="Отзывы и кейсы — Алла Иванова"
+        title={`Отзывы и кейсы — ${site.lawyerName}`}
         description="Анонимизированные примеры кейсов по разводу, имуществу и алиментам."
         path="/reviews"
       />

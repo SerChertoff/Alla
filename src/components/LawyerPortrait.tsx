@@ -1,3 +1,5 @@
+import { site } from "@/config/site";
+
 type LawyerPortraitProps = {
   variant?: "hero" | "about";
   className?: string;
@@ -48,7 +50,7 @@ export function LawyerPortrait({ variant = "hero", className = "" }: LawyerPortr
           isHero ? "text-white/75" : "text-neutral-500",
         ].join(" ")}
       >
-        {isHero ? "Алла Иванова" : "Семейное право · Барнаул"}
+        {isHero ? site.lawyerName : "Семейное право · Барнаул"}
       </p>
     </div>
   );

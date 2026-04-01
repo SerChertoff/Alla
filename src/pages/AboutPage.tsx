@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { PageMeta } from "@/components/PageMeta";
+import { site } from "@/config/site";
 import { LawyerPortrait } from "@/components/LawyerPortrait";
 
 export function AboutPage() {
   return (
     <>
       <PageMeta
-        title="О юристе — Алла Иванова"
+        title={`О юристе — ${site.lawyerName}`}
         description="Образование, опыт и подход к семейным делам в Барнауле."
         path="/about"
       />
@@ -21,7 +22,7 @@ export function AboutPage() {
             <LawyerPortrait variant="about" />
           </motion.div>
           <div>
-            <h1 className="text-3xl font-bold text-neutral-900">Алла Иванова</h1>
+            <h1 className="text-3xl font-bold text-neutral-900">{site.lawyerName}</h1>
             <p className="mt-2 text-sm font-medium text-brand">Семейный юрист · Барнаул</p>
             <div className="mt-6 space-y-4 text-sm leading-relaxed text-neutral-700">
               <p>

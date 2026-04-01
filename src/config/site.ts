@@ -9,7 +9,7 @@ export const contactEmail =
   import.meta.env.VITE_CONTACT_EMAIL?.trim() || "office@alla-ivanova.ru";
 
 export const site = {
-  lawyerName: "Алла Иванова",
+  lawyerName: "Гордиенко Алла Владимировна",
   tagline: "Семейный юрист · Барнаул",
   phoneDisplay: "+7 (906) 960-83-55",
   phoneTel: "+79069608355",

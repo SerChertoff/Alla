@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { site } from "@/config/site";
 
 const nav = [
   { to: "/", label: "Главная" },
@@ -29,7 +30,7 @@ export function Header({ onOpenConsult }: HeaderProps) {
     <header className="sticky top-0 z-40 border-b border-sand-200/80 bg-sand-50/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <NavLink to="/" className="flex flex-col leading-tight" onClick={() => setOpen(false)}>
-          <span className="text-lg font-semibold text-neutral-900">Алла Иванова</span>
+          <span className="text-lg font-semibold text-neutral-900">{site.lawyerName}</span>
           <span className="text-xs text-neutral-600">Семейный юрист · Барнаул</span>
         </NavLink>
 
