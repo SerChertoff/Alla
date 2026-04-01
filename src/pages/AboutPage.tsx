@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { PageMeta } from "@/components/PageMeta";
 import { site } from "@/config/site";
-import { LawyerPortrait } from "@/components/LawyerPortrait";
+import aboutWorkspacePhoto from "../../assets/about-workspace.png";
 
 export function AboutPage() {
   return (
@@ -15,11 +15,19 @@ export function AboutPage() {
       <div className="mx-auto max-w-6xl px-4 py-14">
         <div className="grid gap-10 md:grid-cols-2 md:items-start">
           <motion.div
-            className="overflow-hidden rounded-2xl"
+            className="overflow-hidden rounded-2xl border border-sand-200 bg-sand-100 shadow-sm"
             initial={{ opacity: 0, x: -12 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <LawyerPortrait variant="about" />
+            <img
+              src={aboutWorkspacePhoto}
+              alt="Рабочее место: аккуратный кабинет для подготовки документов и консультаций"
+              className="aspect-[4/5] h-auto w-full object-cover object-center"
+              width={800}
+              height={1000}
+              loading="lazy"
+              decoding="async"
+            />
           </motion.div>
           <div>
             <h1 className="text-3xl font-bold text-neutral-900">{site.lawyerName}</h1>
