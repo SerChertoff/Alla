@@ -2,11 +2,11 @@
 const trimSlash = (s: string) => s.replace(/\/$/, "");
 
 export const siteUrl = trimSlash(
-  import.meta.env.VITE_SITE_URL?.trim() || "https://alla-ivanova.ru"
+  import.meta.env.VITE_SITE_URL?.trim() || "https://gordienko.ru"
 );
 
 export const contactEmail =
-  import.meta.env.VITE_CONTACT_EMAIL?.trim() || "office@alla-ivanova.ru";
+  import.meta.env.VITE_CONTACT_EMAIL?.trim() || "office@gordienko.ru";
 
 export const site = {
   lawyerName: "Гордиенко Алла Владимировна",
