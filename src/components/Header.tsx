@@ -87,7 +87,10 @@ export function Header({ onOpenConsult }: HeaderProps) {
                 key={item.to}
                 to={item.to}
                 className={linkClass}
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  window.scrollTo({ top: 0, behavior: "auto" });
+                }}
               >
                 {item.label}
               </NavLink>
