@@ -26,5 +26,5 @@ export const site = {
   },
   telegram: "https://t.me/alla_gordienko_lawyer",
   mapEmbedUrl:
-    "https://www.openstreetmap.org/export/embed.html?bbox=83.72%2C53.32%2C83.82%2C53.38&layer=mapnik",
+    "https://yandex.ru/map-widget/v1/?text=%D0%91%D0%B0%D1%80%D0%BD%D0%B0%D1%83%D0%BB%2C%20%D1%83%D0%BB.%20%D0%94%D0%B5%D0%BF%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%2013-2&z=17",
 } as const;

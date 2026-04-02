@@ -33,11 +33,6 @@ export function ReviewsPage() {
 
       <div className="mx-auto max-w-6xl px-4 py-14">
         <h1 className="text-3xl font-bold text-neutral-900">Отзывы и кейсы</h1>
-        <p className="mt-2 max-w-2xl text-sm text-neutral-600">
-          Ниже — обезличенные кейсы. Текстовые отзывы клиентов добавляются по согласию; видеоформат
-          возможен после модерации и подписания согласия на публикацию.
-        </p>
-
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {cases.map((c, i) => (
             <motion.article
