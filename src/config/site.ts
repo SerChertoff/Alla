@@ -24,7 +24,7 @@ export const site = {
     addressLocality: "Барнаул",
     addressCountry: "RU",
   },
-  telegram: "https://t.me/alla_ivanova_lawyer",
+  telegram: "https://t.me/alla_gordienko_lawyer",
   mapEmbedUrl:
     "https://www.openstreetmap.org/export/embed.html?bbox=83.72%2C53.32%2C83.82%2C53.38&layer=mapnik",
 } as const;
