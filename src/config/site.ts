@@ -6,21 +6,21 @@ export const siteUrl = trimSlash(
 );
 
 export const contactEmail =
-  import.meta.env.VITE_CONTACT_EMAIL?.trim() || "office@alla-gordienko.ru";
+  import.meta.env.VITE_CONTACT_EMAIL?.trim() || "office@anna-ivanova.ru";
 
 export const site = {
-  lawyerName: "Гордиенко Алла Владимировна",
+  lawyerName: "Иванова Анна Викторовна",
   tagline: "Семейный юрист · Барнаул",
-  phoneDisplay: "+7 (906) 960-83-55",
-  phoneTel: "+79069608355",
+  phoneDisplay: "+7 (900) 000-00-00",
+  phoneTel: "+79000000000",
   /** Для JSON-LD (schema.org) */
-  phoneStructured: "+7-906-960-83-55",
+  phoneStructured: "+7-900-000-00-00",
   email: contactEmail,
-  address: "г. Барнаул, ул. Деповская, 13-2",
+  address: "г. Барнаул, пр-т Ленина, 50",
   /** Для JSON-LD (schema.org), в одном месте с текстом адреса */
   postalAddress: {
     "@type": "PostalAddress" as const,
-    streetAddress: "ул. Деповская, 13-2",
+    streetAddress: "пр-т Ленина, 50",
     addressLocality: "Барнаул",
     addressCountry: "RU",
   },
