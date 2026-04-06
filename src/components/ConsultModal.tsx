@@ -106,7 +106,7 @@ export function ConsultModal({ open, onClose }: ConsultModalProps) {
           aria-labelledby="consult-title"
         >
           <motion.div
-            className="relative w-full max-w-lg rounded-2xl bg-white p-6 shadow-xl"
+            className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-6 shadow-xl"
             initial={{ y: 24, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 24, opacity: 0 }}
