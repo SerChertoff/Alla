@@ -11,10 +11,10 @@ export const contactEmail =
 export const site = {
   lawyerName: "Гордиенко Алла Владимировна",
   tagline: "Семейный юрист · Барнаул",
-  phoneDisplay: "+7 (906) 960-83-55",
-  phoneTel: "+79069608355",
+  phoneDisplay: "+7 (913) 247-88-11",
+  phoneTel: "+79132478811",
   /** Для JSON-LD (schema.org) */
-  phoneStructured: "+7-906-960-83-55",
+  phoneStructured: "+7-913-247-88-11",
   email: contactEmail,
   address: "г. Барнаул, ул. Деповская, 13-2",
   /** Для JSON-LD (schema.org), в одном месте с текстом адреса */

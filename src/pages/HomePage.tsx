@@ -90,7 +90,7 @@ export function HomePage({ onOpenConsult }: HomePageProps) {
               <img
                 src={profilePhoto}
                 alt={`${site.lawyerName} — семейный юрист, Барнаул`}
-                className="aspect-[4/5] h-auto w-full object-cover object-[center_20%]"
+                className="aspect-[4/5] h-auto w-full object-cover object-[62%_18%]"
                 width={640}
                 height={800}
                 decoding="async"
